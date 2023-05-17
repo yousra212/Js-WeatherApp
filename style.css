@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+p{
+    margin:5px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+body{
+    background: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg'); 
+    background-size: cover;
+    background-color: ;
+}
+
+div.top_container {
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+div.top_container > div.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(24,24,27, 0.6);
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid #eee;
+}
+
+.header h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#input{
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: aliceblue;
+}
+
+#search{
+        background: #3c3c44;
+        width: 150px;
+        height: 30px;
+        border: 1px solid #eee;
+        border-radius: 50px;
+        color: white;
+        cursor: pointer;
+        margin: 20px auto;
+
+}
+
+.weather{
+    text-align: center;
+    color: aliceblue;
+}
+
+#city{
+    font-size: 30px;
+}
+
+#time{
+    font-size: 20px;
+}
+
+#temperature{
+    font-size: 50px;
+    margin-left: 0 30px 10px 0;
+}
+
+.temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background: rgba(24,24,27, 0.6);
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid #eee;
+}
+
+.forecstD{
+    display: flex;
+    margin: 20px 20px;
+    color: aliceblue;
+}
+
+.weekF{
+    display:flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.dayF{
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(24,24,27, 0.6);
+    width: 166px;
+    height: 226px;
+}
+
+.date{
+    color: white;
+}
+.desc{
+    color: white;
+}
+.temp{
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for smartphones */
+    .weekF {
+        display: flex;
+        font-size: 15px;
+        overflow-x: scroll;
+        gap:10px;
+        margin: 0 5px;
+    }
+    .dayF{
+        width: 180px;
+        height: 270px;
+        font-size: 15px;
+    }
+    div.top_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #search{
+        width: 100%; 
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    main{
+        width: 350px;
+    }
+    h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .header{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Styles for smartphones */
+    .weekF {
+        display: flex;
+        font-size: 15px;
+        overflow-x: scroll;
+        gap:10px;
+        margin: 0 5px;
+    }
+    .dayF{
+        width: 180px;
+        height: 270px;
+        font-size: 15px;
+    }
+    div.top_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #search{
+        width: 100%; 
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    main{
+        width: 350px;
+    }
+    h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .header{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
